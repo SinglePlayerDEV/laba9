@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+void time(int& t) {
+    t *= 60;
+}
+
+int main() {
+	int t;
+	cout << "enter time" << endl;
+	cin >> t;
+	time(t);
+	cout << "time in second  " << t << endl;
+}
