@@ -1,0 +1,26 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+void cal(double a, double b, double alf, double& S, double& per) {
+	S = a * b * cos(alf);
+	per = 2 * (a * b);
+}
+int main() {
+	setlocale(LC_ALL, "rus");
+	double a, b, alf;
+	double per, S;
+	for (int i = 0; i < 2; i++) {
+		cout << "ввведите сторону а " << endl;
+		cin >> a;
+		cout << "ввведите сторону b " << endl;
+		cin >> b;
+		cout << "введите угол " << endl;
+		cin >> alf;
+
+		cal(a, b, alf, S, per);
+		cout << S << endl;
+		cout << per <<endl;
+	}
+}
